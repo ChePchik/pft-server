@@ -1,0 +1,48 @@
+{
+    "ID": 0,
+    "NameTest": "string",
+    "TimeINsecond": "int",
+    "AuthorID": "int",
+    "ErrorCount": "error < int = не сдали",
+    "AttemptCount": "int",
+    "Questions": [{
+            "IDQ": 0,
+            "Type": "checkbox",
+            "Question": "вопрос #1",
+            "Note": "заметка 1",
+            "Answers": [{
+                    "idx": 1,
+                    "text": "вариант ответа 0.1",
+                    "right": "false"
+                },
+                {
+                    "idx": 2,
+                    "text": "вариант ответа 0.2",
+                    "right": "false"
+                },
+                {
+                    "idx": 3,
+                    "text": "вариант ответа 0.3",
+                    "right": "true"
+                }
+            ]
+        },
+        {
+            "IDQ": 1,
+            "Type": "radiobox",
+            "Question": "вопрос #2",
+            "Note": "заметка 2",
+            "Answers": [{
+                    "idx": 1,
+                    "text": "вариант ответа 0.1",
+                    "right": "false"
+                },
+                {
+                    "idx": 2,
+                    "text": "вариант ответа 0.2",
+                    "right": "false"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+[{
+        "id": 0,
+        "teacherID": 0,
+        "name": "преподаватель"
+    },
+    {
+        "id": 1,
+        "teacherID": 0,
+        "name": "ПКС-415"
+    },
+    {
+        "id": 2,
+        "teacherID": 0,
+        "name": "ПКС-315"
+    },
+    {
+        "id": 3,
+        "teacherID": 0,
+        "name": "ПКС-215"
+    },
+    {
+        "id": 4,
+        "teacherID": 0,
+        "name": "ПКС-115"
+    },
+    {
+        "id": 5,
+        "teacherID": 1,
+        "name": "КС-411"
+    },
+    {
+        "id": 6,
+        "teacherID": 1,
+        "name": "ПКС-420"
+    },
+    {
+        "id": 7,
+        "teacherID": 2,
+        "name": "ПКС-312"
+    },
+    {
+        "id": 8,
+        "teacherID": 3,
+        "name": "СС-119"
+    },
+    {
+        "id": 9,
+        "teacherID": 3,
+        "name": "ДО-120"
+    }
+
+]

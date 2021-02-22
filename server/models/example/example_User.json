@@ -1,0 +1,12 @@
+{
+    "ID": 0,
+    "Email": "string",
+    "Name": "string",
+    "Surname": "string",
+    "Thirdname": "string",
+    "group": "string",
+    "Password": "hesh()",
+    "Role": "root/admin/user",
+    "Date": "string",
+    "TestIDs": [1, 2, 33]
+}
