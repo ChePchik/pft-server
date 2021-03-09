@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{164:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return r}));var a=t(0),l=t.n(a);function r(){return l.a.createElement(a.Fragment,null,l.a.createElement("div",null,l.a.createElement("h3",null,"ACCESS DENIED"),l.a.createElement("h5",null,"Please contact the system administrator")))}}}]);
