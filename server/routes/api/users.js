@@ -3,17 +3,17 @@ const router = express.Router();
 const User = require("../../models/User");
 
 /**
- * @route GET api/users/info
+ * @route POST api/users/info
  * @desc GET all teacher
  * @access Public
  */
-router.get('/info', (req, res) => {
-    console.log(req.body.email);
-    User.findOne({ email: req.body.email })
+router.post('/user', (req, res) => {
+    // console.log(req.body.email);
+    User.findOne({ name: req.body.email })
         .select('-password')
         .select('-__v')
         .then(groups => {
-            console.log(groups);
+            // console.log(groups);
             if (!groups) {
                 return res.status(404).json({ error: "User not found" });
             }
