@@ -25,7 +25,6 @@ const User = require("../../models/User");
  *       200:
  *         description: Получаем данные пользователя без пароля
  */
-<<<<<<< HEAD
 router.post("/user", (req, res) => {
 	// console.log(req.body.email);
 	User.findOne({ email: req.body.email })
@@ -38,20 +37,6 @@ router.post("/user", (req, res) => {
 			}
 			res.json(groups);
 		});
-=======
-router.post('/user', (req, res) => {
-    // console.log(req.body.email);
-    User.findOne({ name: req.body.email })
-        .select('-password')
-        .select('-__v')
-        .then(groups => {
-            // console.log(groups);
-            if (!groups) {
-                return res.status(404).json({ error: "User not found" });
-            }
-            res.json(groups);
-        });
->>>>>>> baea96053af1603e6cdfdfeddb3cf89dcb9b8520
 });
 
 /**
