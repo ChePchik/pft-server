@@ -1,1 +1,0 @@
-(self.webpackChunkPFT_client=self.webpackChunkPFT_client||[]).push([[319],{3319:(e,t,l)=>{"use strict";l.r(t),l.d(t,{default:()=>function(){return n.createElement(n.Fragment,null,n.createElement("div",null,n.createElement("h3",null,"ACCESS DENIED"),n.createElement("h5",null,"Please contact the system administrator")))}});var n=l(7294)}}]);

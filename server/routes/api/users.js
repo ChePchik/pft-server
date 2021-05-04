@@ -3,11 +3,7 @@ const router = express.Router();
 const User = require("../../models/User");
 
 /**
-<<<<<<< HEAD
  * @route POST api/users/user
-=======
- * @route POST api/users/info
->>>>>>> baea96053af1603e6cdfdfeddb3cf89dcb9b8520
  * @desc GET all teacher
  * @swagger
  * /api/users/user:

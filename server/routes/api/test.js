@@ -7,17 +7,10 @@ const Test = require("../../models/Test");
  * @access Private
  */
 router.post("/", (req, res) => {
-<<<<<<< HEAD
 	const newTest = new Test({
 		nameTest: req.body.name,
 		authorID: req.body.author,
 		// attemptCount: 3, //количество попыток
-=======
-	// console.log(req.body.email);
-	const newTest = new Test({
-		nameTest: req.body.name,
-		attemptCount: 3, //количество попыток
->>>>>>> baea96053af1603e6cdfdfeddb3cf89dcb9b8520
 	});
 	newTest.save().then((test) => {
 		if (!test) {
