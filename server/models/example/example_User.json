@@ -1,12 +1,12 @@
-{
-    "ID": 0,
-    "Email": "string",
-    "Name": "string",
-    "Surname": "string",
-    "Thirdname": "string",
-    "group": "string",
-    "Password": "hesh()",
-    "Role": "root/admin/user",
-    "Date": "string",
-    "TestIDs": [1, 2, 33]
-}
+[
+	{
+		"email": "avmal@hetu.io",
+		"name": "heregesa@paffohmop.do",
+		"surname": "diniviba@osburro.nl",
+		"thirdname": "roinauli@suzepoz.ly",
+		"group": "$name_group",
+		"password": "$2a$10$L5SAvHzRo1U5nAuRSFlEU.FhR.x8ns0.TpbIJDFJWdX2NjhVaUPam",
+		"role": "teacher/admin/user",
+		"test_ids": []
+	}
+]
