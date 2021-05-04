@@ -1,5 +1,5 @@
+// require("dotenv").config();
 const express = require("express");
-require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const swaggerUi = require("swagger-ui-express");
@@ -12,7 +12,9 @@ const test = require("./server/routes/api/test");
 const data = require("./server/routes/api/group");
 // const SwaggegDoc = require("./SwaggegDoc.json");
 const port = process.env.PORT || 3001;
-const MONGODB_URL = process.env.DATABASE_URL;
+const MONGODB_URL =
+	process.env.DATABASE_URL ||
+	"mongodb+srv://db_pft:azPtPsGpZgWj3VE@cluster0.gtwri.mongodb.net/PFT?retryWrites=true&w=majority";
 // Bodyparser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
