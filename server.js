@@ -1,5 +1,5 @@
-require("dotenv").config();
 const express = require("express");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const swaggerUi = require("swagger-ui-express");
@@ -24,7 +24,6 @@ const options = {
 			title: "PFT server API",
 			version: "1.0.0",
 		},
-		// ...SwaggegDoc,
 	},
 	apis: ["./server/routes/api/*.js"], // files containing annotations as above
 };
@@ -41,11 +40,6 @@ mongoose
 
 // Routes
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec)); //
-// const parser = new SwaggerParser();
-// const apiDescription = parser.validate(SwaggegDoc);
-// swaggerRoutes(users, apiDescription);
-// connect(app);
-
 app.use("/api/auth", auth);
 app.use("/api/group", data);
 app.use("/api/users", users);
