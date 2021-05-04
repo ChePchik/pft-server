@@ -1,0 +1,53 @@
+{
+	"paths": {
+		"/api/users/user": {
+			"post": {
+				"tags": ["pet"],
+				"summary": "1111Update an existing pet",
+				"description": "",
+				"operationId": "updatePet",
+				"consumes": ["application/json", "application/xml"],
+				"produces": ["application/xml", "application/json"],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"description": "Pet object that needs to be added to the store",
+						"required": true,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"userId": {
+										"type": "number"
+									},
+									"id": {
+										"type": "number"
+									},
+									"title": {
+										"type": "string"
+									},
+									"body": {
+										"type": "string"
+									}
+								},
+								"example": {
+									"userId": 1,
+									"id": 1,
+									"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+									"body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"400": { "description": "Invalid ID supplied" },
+					"404": { "description": "Pet not found" },
+					"405": { "description": "Validation exception" }
+				}
+			}
+		}
+	}
+}
