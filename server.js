@@ -29,7 +29,7 @@ const options = {
 	},
 	apis: ["./server/routes/api/*.js"], // files containing annotations as above
 };
-const swaggerSpec = swaggerJSDoc(options);
+// const swaggerSpec = swaggerJSDoc(options);
 
 // Connect to MongoDB
 mongoose
@@ -41,7 +41,7 @@ mongoose
 //ДОБАВИТЬ ЛОГИРОВАНИЕ
 
 // Routes
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec)); //
+// app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec)); //
 app.use("/api/auth", auth);
 app.use("/api/group", data);
 app.use("/api/users", users);
